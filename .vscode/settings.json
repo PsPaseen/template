@@ -1,0 +1,43 @@
+{
+  "files.eol": "\n",
+  "files.associations": {
+    "*.pcss": "css"
+  },
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "editor.rulers": [120],
+  "editor.tabSize": 2,
+  "css.lint.unknownAtRules": "ignore",
+  "cSpell.ignoreRegExpList": ["[\u0E00-\u0E7F]"],
+  "cSpell.words": [
+    "antd",
+    "decamelize",
+    "gdcc",
+    "Heavent",
+    "msal",
+    "netsoft",
+    "pascalize",
+    "pcss",
+    "pttep",
+    "Sider",
+    "sonarqube",
+    "sonarsource",
+    "svgs",
+    "tanstack",
+    "testid",
+    "Swiper",
+    "tanstack"
+  ],
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "sonarlint.connectedMode.project": {
+    "connectionId": "https-sonar-dev-h-xyz-",
+    "projectKey": "PTTEP-WMS-Web"
+  },
+  "i18n-ally.localesPaths": ["src/utils/locales", "src/utils/locales/langs"]
+}

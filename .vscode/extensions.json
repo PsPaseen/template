@@ -1,0 +1,14 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "streetsidesoftware.code-spell-checker",
+    "formulahendry.auto-close-tag",
+    "mrmlnc.vscode-less",
+    "wmaurer.change-case",
+    "christian-kohler.path-intellisense",
+    "alefragnani.project-manager",
+    "styled-components.vscode-styled-components",
+    "formulahendry.auto-rename-tag"
+  ]
+}

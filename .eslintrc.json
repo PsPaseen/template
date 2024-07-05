@@ -1,0 +1,87 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "jest": true
+  },
+  "extends": [
+    "react-app",
+    "prettier",
+    "plugin:sonarjs/recommended",
+    "plugin:@tanstack/eslint-plugin-query/recommended"
+  ],
+  "plugins": [
+    "react-hooks",
+    "import",
+    "unused-imports",
+    "prettier",
+    "sonarjs",
+    "@tanstack/query",
+    "eslint-plugin-no-inline-styles"
+  ],
+  "rules": {
+    "no-shadow": "off",
+    "no-return-await": "error",
+    "prettier/prettier": "error",
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index",
+          "type",
+          "object"
+        ],
+        "newlines-between": "always",
+        "alphabetize": { "order": "asc", "caseInsensitive": false }
+      }
+    ],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "error",
+    "@typescript-eslint/no-shadow": "error",
+    "unused-imports/no-unused-imports": "error",
+    "no-duplicate-imports": "error",
+    "no-template-curly-in-string": "off",
+    "react/no-unused-prop-types": "warn",
+    "no-restricted-imports": [
+      "error",
+      {
+        "paths": [
+          {
+            "name": "@emotion/react",
+            "importNames": ["ClassNames", "Global", "keyframes", "css"],
+            "message": "Please use the @emotion/react functions from our @ptt-eia-web/helpers instead."
+          },
+          {
+            "name": "@emotion/css",
+            "importNames": [
+              "cache",
+              "css",
+              "cx",
+              "flush",
+              "getRegisteredStyles",
+              "hydrate",
+              "injectGlobal",
+              "keyframes",
+              "merge",
+              "sheet"
+            ],
+            "message": "Please use the @emotion/css functions from our @ptt-eia-web/helpers instead."
+          }
+        ]
+      }
+    ]
+  },
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
+    "import/resolver": {
+      "typescript": {}
+    }
+  }
+}
