@@ -14,7 +14,13 @@ import {
 import Grid from '@mui/material/Unstable_Grid2';
 import React, { useState } from 'react';
 
+import Contact from './Contact';
+import Github from './GIthub';
+import Internship from './Internship';
+import PVP from './PVP';
+import Roadmap from './Roadmap';
 import Showcase from './Showcase';
+import WorkAtU from './WorkAtU';
 
 const Profile = styled(Paper)(({ theme }) => ({
   display: 'flex',
@@ -116,12 +122,12 @@ export default function Sidebar() {
       <Grid xs={9.5}>
         <Profile sx={{ border: 2, borderColor: 'whitesmoke', boxShadow: 3 }}>
           {activeComponent === 'showcase' && <Showcase />}
-          {activeComponent === 'work' && <div>Work at University</div>}
-          {activeComponent === 'internship' && <div>Internship</div>}
-          {activeComponent === 'roadmap' && <div>Roadmap</div>}
-          {activeComponent === 'pvp' && <div>PVP</div>}
-          {activeComponent === 'github' && <div>Github</div>}
-          {activeComponent === 'contact' && <div>Contact</div>}
+          {activeComponent === 'work' && <WorkAtU />}
+          {activeComponent === 'internship' && <Internship />}
+          {activeComponent === 'roadmap' && <Roadmap />}
+          {activeComponent === 'pvp' && <PVP />}
+          {activeComponent === 'github' && <Github />}
+          {activeComponent === 'contact' && <Contact />}
           {activeComponent === 'question' && <div>???</div>}
         </Profile>
       </Grid>

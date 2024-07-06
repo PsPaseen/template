@@ -59,8 +59,8 @@ function SetCard() {
   );
 }
 
-export default function Showcase() {
-  const dogCards = Array(3).fill(<DogCard />);
+export default function Internship() {
+  const dogCards = Array(1).fill(<DogCard />);
   const setCards = Array(1).fill(<SetCard />);
 
   return (

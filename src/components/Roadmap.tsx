@@ -59,9 +59,9 @@ function SetCard() {
   );
 }
 
-export default function Showcase() {
-  const dogCards = Array(3).fill(<DogCard />);
-  const setCards = Array(1).fill(<SetCard />);
+export default function Roadmap() {
+  const dogCards = Array(1).fill(<DogCard />);
+  const setCards = Array(2).fill(<SetCard />);
 
   return (
     <Grid container spacing={1.5}>

@@ -59,7 +59,7 @@ function SetCard() {
   );
 }
 
-export default function Showcase() {
+export default function PVP() {
   const dogCards = Array(3).fill(<DogCard />);
   const setCards = Array(1).fill(<SetCard />);
 

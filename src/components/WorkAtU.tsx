@@ -11,7 +11,7 @@ const CustomCard = styled(Paper)(({ theme }) => ({
   borderRadius: 25,
   border: '2px solid whitesmoke',
   height: '350px',
-  width: '100%',
+  width: '350px',
 }));
 
 function DogCard() {
@@ -59,8 +59,8 @@ function SetCard() {
   );
 }
 
-export default function Showcase() {
-  const dogCards = Array(3).fill(<DogCard />);
+export default function WorkAtU() {
+  const dogCards = Array(1).fill(<DogCard />);
   const setCards = Array(1).fill(<SetCard />);
 
   return (
